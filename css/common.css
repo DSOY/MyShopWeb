@@ -1,0 +1,279 @@
+﻿@font-face {
+    font-family: 'iconfont'; /* project id 644222 */
+    src: url('//at.alicdn.com/t/font_644222_7pfbbo1ivympwrk9.eot');
+    src: url('//at.alicdn.com/t/font_644222_7pfbbo1ivympwrk9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_644222_7pfbbo1ivympwrk9.woff') format('woff'), url('//at.alicdn.com/t/font_644222_7pfbbo1ivympwrk9.ttf') format('truetype'), url('//at.alicdn.com/t/font_644222_7pfbbo1ivympwrk9.svg#iconfont') format('svg');
+}
+.iconfont {
+    font-family: "iconfont";
+    font-style: normal;
+    color: #343538;
+    font-size: 26px;
+}
+.iconfont_menu{
+    font-family: "iconfont";
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+}
+/*主色调*/
+.background {
+    background-color: #0cd1cb;
+}
+.mainContainer {
+    overflow: hidden;
+    min-height: 368px;
+}
+
+.fixedNavBut {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 38px;
+    height: 28px;
+    border-radius: 4px;
+    background: url(../images/more.png) center no-repeat;
+    outline: none;
+    background-color: #4bafac;
+}
+
+    .fixedNavBut:checked {
+        background: url(../images/more.png)center no-repeat;
+        background-color: #0cd1cb;
+    }
+
+.fixedNavBut + section {
+    overflow: hidden;
+}
+.fixedNavBut + section > div.fold-content {
+    height: 200px;
+    background: #0cd1cb;
+    border-radius: 4px;
+    opacity: 1;
+    overflow: hidden;
+    transition: height 1s ease-out, opacity 1s ease-out;
+    -moz-transition: height 1s ease-out, opacity 1s ease-out;
+    position: fixed;
+    top: 45px;
+    right: 9px;
+    width: 40%;
+    z-index: 100;
+    box-shadow: -2px 0 5px #025a58;
+}
+.fold-content li {
+    border-color: #1bbdb8;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+}
+.fold-content li a {
+    color: #fff;
+     font-size: 17px; 
+     position: relative; 
+     display: block; 
+     padding: 4% 0px 4% 25px; 
+}
+
+.fixedNavBut:checked + section > div.fold-content {
+    opacity: 0;
+    height: 0;
+}
+
+/*我的*/
+
+/*顶部*/
+.my_Top {
+    width: 100%;
+    height: 160px;
+    background-image: url('../images/wap/awardCard-pattern.jpg');
+}
+    .my_Top p {
+        margin-left:7.5rem;
+        margin-top:-10px;
+        font-size:1.6rem;
+    }
+.portrait {
+    width: 75px;
+    height: 75px;
+    background: url(../images/edit_icon/user.png)center no-repeat;
+    position: relative;
+    top: 2.6rem;
+    left: 2.4rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.my_allorder {
+    border-color: rgba(219, 219, 219, 0.66);
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    height: 2.2rem;
+    display:block;
+    background-color:white;
+}
+    .my_allorder a {
+        display:block;
+    }
+.my_lifont {
+    font-size: 1rem;
+    color: #666;
+    line-height: 2.3rem;
+    margin-left: 2%;
+}
+.right{
+   position:absolute;
+   right:10px;
+}
+.center {
+    text-align: center;
+    display: inherit;
+}
+.centerbox {
+    text-align: center;
+    position: relative;
+    top: 25%;
+    padding: 0 10px 0 10px;
+}
+.my_order {
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+}
+    .my_order div {
+        height: 4rem;
+        width: 24%;
+        display: -webkit-inline-box;
+        margin-top: 1.5rem;
+    }
+    .my_order div {
+        position: relative;
+        text-align: -webkit-center;
+    }
+    .bottom {
+        display: -webkit-box;
+        width: 45px;
+    }
+.my_function {
+    margin-top:10px;
+    width: 100%;
+    height: 18rem;
+    background-color: white;
+}
+.li {
+    border-color: rgba(219, 219, 219, 0.66);
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    height: 2.7rem;
+    display: block;
+}
+    .li a {
+        font-size: 1rem;
+        color: #666;
+        line-height: 2.8rem;
+        margin-left: 2%;
+        display:block;
+    }
+
+/*购物车*/
+.cart_img {
+    height: 80%;
+    padding-bottom: 3%;
+}
+.cart_details {
+    display: initial;
+    height: 7rem;
+    min-width: 55%;
+    position: absolute;
+    margin-left: 10px;
+}
+.shop_name{
+    font-size:1rem;
+    margin-top:10px;
+}
+.cart_size{
+    color:#999;
+    margin-top:6px;
+}
+.less {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px 0 0 50px;
+    border: 1px solid #666;
+    text-align: -webkit-center;
+}
+.add {
+    width: 20px;
+    height: 20px;
+    border-radius: 0 50px 50px 0;
+    border: 1px solid #666;
+    text-align: -webkit-center;
+}
+.shop_num {
+    width: 20px;
+    height: 20px;
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color:#666;
+    text-align: -webkit-center;
+}
+.shop_money {
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+}
+.quantity {
+    display: -webkit-box;
+    right: -110%;
+    position: absolute;
+    margin-top: -3px;
+}
+
+.checkbox {
+    height: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 30px;
+    background: url(../images/check_no.png) center no-repeat;
+    outline: none;
+}
+
+    .checkbox:checked {
+        background: url(../images/check_yes.png)center no-repeat;
+    }
+.settlement {
+    height: 48px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 50px;
+    display: inline-flex;
+}
+.total {
+    height: 100%;
+    line-height: 50px;
+    right: 100px;
+    position: absolute;
+}
+.btn_cart{
+    height:3rem;
+    width:80px;
+    position:absolute;
+    right:0px;
+}
+.messageBox {
+    max-width: 16rem;
+    height: 2.6rem;
+    background-color: #9fe8e6;
+    position: relative;
+    top: 40%;
+    border-radius: 50px;
+    border: 1px solid #666;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boxback {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 216, 216, 0.27);
+    top: 0;
+    position: absolute;
+    display: none;
+}
